@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mediaQuery } from '../../lib/media';
 
 const Block = styled.div`
   width: 100%;

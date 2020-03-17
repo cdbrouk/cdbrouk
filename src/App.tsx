@@ -1,12 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/home/HomePage';
 
-function App() {
+interface AppProps {}
+
+const App: React.FC<AppProps> = props => {
   return (
     <>
-      <HomePage />
+      <Helmet>
+        <title>CDBROUK</title>
+        <meta name="description" content="Web Developer CDBROUK's portfolio" />
+      </Helmet>
+      <Switch>
+        <Route path="/" component={HomePage} exact />
+      </Switch>
     </>
   );
-}
+};
 
 export default App;
