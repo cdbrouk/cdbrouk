@@ -6,11 +6,11 @@ import MainResponsive from './MainResponsive';
 export interface MainHeaderProps {}
 
 const Block = styled.div`
-  height: 4rem;
+  height: 72px;
   position: fixed;
   z-index: 10;
-  background: white;
   width: 100%;
+  background-color: white;
 `;
 
 const Inner = styled(MainResponsive)`
@@ -30,9 +30,9 @@ const Home = styled.h1`
   font-size: 1.5rem;
 `;
 
-const RightMenu = styled.h1`
+const RightItem = styled.h1`
   font-size: 1.5rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
 `;
 
 const MainHeader = (props: MainHeaderProps) => {
@@ -46,14 +46,14 @@ const MainHeader = (props: MainHeaderProps) => {
             smooth
             style={{ textDecoration: 'none', color: 'black' }}
           >
-            <RightMenu>Second</RightMenu>
+            <RightItem>Second</RightItem>
           </Link>
           <Link
             to="#third"
             smooth
             style={{ textDecoration: 'none', color: 'black' }}
           >
-            <RightMenu>Third</RightMenu>
+            <RightItem>Third</RightItem>
           </Link>
         </Right>
       </Inner>
