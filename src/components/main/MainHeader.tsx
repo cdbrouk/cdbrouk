@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { HashLink as Link } from 'react-router-hash-link';
 import MainResponsive from './MainResponsive';
 
 export interface MainHeaderProps {}
 
 const Block = styled.div`
   height: 4rem;
+  position: fixed;
+  z-index: 10;
+  background: white;
+  width: 100%;
 `;
 
 const Inner = styled(MainResponsive)`
@@ -27,6 +32,7 @@ const Home = styled.h1`
 
 const RightMenu = styled.h1`
   font-size: 1.5rem;
+  margin-right: 1rem;
 `;
 
 const MainHeader = (props: MainHeaderProps) => {
@@ -35,8 +41,20 @@ const MainHeader = (props: MainHeaderProps) => {
       <Inner>
         <Home>Home</Home>
         <Right>
-          <RightMenu>Second</RightMenu>
-          <RightMenu>Third</RightMenu>
+          <Link
+            to="#second"
+            smooth
+            style={{ textDecoration: 'none', color: 'black' }}
+          >
+            <RightMenu>Second</RightMenu>
+          </Link>
+          <Link
+            to="#third"
+            smooth
+            style={{ textDecoration: 'none', color: 'black' }}
+          >
+            <RightMenu>Third</RightMenu>
+          </Link>
         </Right>
       </Inner>
     </Block>

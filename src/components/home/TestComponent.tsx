@@ -15,11 +15,12 @@ const Text = styled.h1`
 
 export interface TestComponentProps {
   color: string;
+  id: string;
 }
 
-const TestComponent = ({ color }: TestComponentProps) => {
+const TestComponent = ({ color, id }: TestComponentProps) => {
   return (
-    <Container color={color}>
+    <Container color={color} id={id}>
       <Text>{color}</Text>
     </Container>
   );

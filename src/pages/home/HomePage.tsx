@@ -7,8 +7,8 @@ const HomePage = () => {
   return (
     <MainTemplate>
       <MainHeader />
-      <TestComponent color="#e8e8e8" />
-      <TestComponent color="#3A6EE8" />
+      <TestComponent color="#e8e8e8" id="second" />
+      <TestComponent color="#3A6EE8" id="third" />
     </MainTemplate>
   );
 };
