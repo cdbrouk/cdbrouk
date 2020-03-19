@@ -1,12 +1,20 @@
 import React from 'react';
-import MainTemplate from '../../components/main/MainTemplate';
-import MainHeader from '../../components/main/MainHeader';
+import HomeLayout from '../../components/home/HomeLayout';
+import { AvatarIcon } from '../../static/svg';
+import HomeIntro from '../../components/home/HomeIntro';
 
-const HomePage = () => {
+export interface HomePageProps {
+  id: string;
+}
+
+const HomePage = ({ id }: HomePageProps) => {
   return (
-    <MainTemplate>
-      <MainHeader />
-    </MainTemplate>
+    <HomeLayout id={id}>
+      <>
+        <AvatarIcon style={{ width: 270, height: 270 }} />
+        <HomeIntro />
+      </>
+    </HomeLayout>
   );
 };
 

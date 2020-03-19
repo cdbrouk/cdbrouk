@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { HashLink as Link } from 'react-router-hash-link';
 import MainResponsive from './MainResponsive';
+import { Logo } from '../../static/svg';
 
 export interface MainHeaderProps {}
 
 const Block = styled.div`
-  height: 72px;
-  position: fixed;
-  z-index: 10;
+  height: 108px;
+  /* position: fixed;
+  z-index: 10; */
   width: 100%;
   background-color: white;
 `;
@@ -26,34 +27,40 @@ const Right = styled.div`
   position: relative;
 `;
 
-const Home = styled.h1`
-  font-size: 1.5rem;
-`;
-
-const RightItem = styled.h1`
+const RightItem = styled.p`
   font-size: 1.5rem;
   margin-left: 1rem;
+  font-weight: 100;
 `;
 
 const MainHeader = (props: MainHeaderProps) => {
   return (
     <Block>
       <Inner>
-        <Home>Home</Home>
+        <Link to="/">
+          <Logo />
+        </Link>
         <Right>
           <Link
-            to="#second"
+            to="#portfolio"
             smooth
             style={{ textDecoration: 'none', color: 'black' }}
           >
-            <RightItem>Second</RightItem>
+            <RightItem>PORTFOLIO</RightItem>
           </Link>
           <Link
-            to="#third"
+            to="#about"
             smooth
             style={{ textDecoration: 'none', color: 'black' }}
           >
-            <RightItem>Third</RightItem>
+            <RightItem>ABOUT</RightItem>
+          </Link>
+          <Link
+            to="#contact"
+            smooth
+            style={{ textDecoration: 'none', color: 'black' }}
+          >
+            <RightItem>CONTACT</RightItem>
           </Link>
         </Right>
       </Inner>
