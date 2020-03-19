@@ -12,7 +12,7 @@ const MainPage = () => {
     <MainTemplate>
       <MainHeader />
       <FloatingHeader />
-      <HomePage id="/" />
+      <HomePage id="home" />
       <PortfolioPage id="portfolio" />
       <AboutPage id="about" />
       <ContactPage id="contact" />

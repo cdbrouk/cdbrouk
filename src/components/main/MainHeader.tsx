@@ -37,7 +37,7 @@ const MainHeader = (props: MainHeaderProps) => {
   return (
     <Block>
       <Inner>
-        <Link to="/">
+        <Link to="#home" smooth>
           <Logo />
         </Link>
         <Right>
