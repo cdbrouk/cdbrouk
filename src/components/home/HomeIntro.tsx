@@ -21,8 +21,8 @@ const HomeIntro = () => {
   return (
     <Block>
       <Name>CDBROUK</Name>
-      <Intro>I&apos;m Web Developer in Korea</Intro>
-      <Intro>2019.05 ~</Intro>
+      <Intro>Web Developer in Korea</Intro>
+      <Intro>React, React-Naitve, Node, Python Django</Intro>
     </Block>
   );
 };
