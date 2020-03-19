@@ -4,19 +4,17 @@ import styled from 'styled-components';
 const Block = styled.div`
   display: flex;
   flex-direction: column;
-  width: 660px;
-  height: 270px;
   margin-left: 2.5rem;
 `;
 
-const Name = styled.text`
+const Name = styled.p`
   font-weight: 500;
-  font-size: 4.5rem;
+  font-size: 2rem;
 `;
 
-const Intro = styled.text`
+const Intro = styled.p`
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 1.4rem;
 `;
 
 const HomeIntro = () => {

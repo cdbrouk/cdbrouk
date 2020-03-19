@@ -8,9 +8,9 @@ interface AboutPageProps {
   id: string;
 }
 
-const Intro = styled.text`
+const Intro = styled.p`
   font-weight: 100;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   align-self: center;
   text-align: center;

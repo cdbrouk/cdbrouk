@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PageLayout from '../../components/base/PageLayout';
-import { AvatarIcon } from '../../static/svg';
+import ContactTextBlock from '../../components/contact/ContactTextBlock';
 
 const BackGround = styled.div`
   background-color: #909dc1;
@@ -16,7 +16,7 @@ const ContactPage = ({ id }: ContactPageProps) => {
   return (
     <BackGround>
       <PageLayout id={id}>
-        <AvatarIcon />
+        <ContactTextBlock />
       </PageLayout>
     </BackGround>
   );
