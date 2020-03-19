@@ -5,11 +5,13 @@ import HomePage from './home/HomePage';
 import PortfolioPage from './portfolio/PortfolioPage';
 import ContactPage from './contact/ContactPage';
 import AboutPage from './about/AboutPage';
+import FloatingHeader from '../components/main/FloatingHeader';
 
 const MainPage = () => {
   return (
     <MainTemplate>
       <MainHeader />
+      <FloatingHeader />
       <HomePage id="/" />
       <PortfolioPage id="portfolio" />
       <AboutPage id="about" />

@@ -1,8 +1,17 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 import { getScrollTop } from '../../lib/utils';
+import MainHeader from './MainHeader';
 
 interface FloatingHeaderProps {}
+
+const Block = styled.div`
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 10;
+`;
 
 const FloatingHeader = (props: FloatingHeaderProps) => {
   const [visible, setVisible] = useState(false);
@@ -53,7 +62,25 @@ const FloatingHeader = (props: FloatingHeaderProps) => {
     prevScrollTop.current = scrollTop;
   }, [height]);
 
-  return <></>;
+  useEffect(() => {
+    document.addEventListener('scroll', onScroll);
+    return () => {
+      document.removeEventListener('scroll', onScroll);
+    };
+  }, [onScroll]);
+
+  return (
+    <Block
+      style={
+        visible
+          ? { marginTop, display: 'block' }
+          : { marginTop: -1 * height, opacity: 0 }
+      }
+      ref={blockRef}
+    >
+      <MainHeader />
+    </Block>
+  );
 };
 
 export default FloatingHeader;
