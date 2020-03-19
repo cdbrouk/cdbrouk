@@ -10,10 +10,8 @@ export interface HomePageProps {
 const HomePage = ({ id }: HomePageProps) => {
   return (
     <HomeLayout id={id}>
-      <>
-        <AvatarIcon style={{ width: 270, height: 270 }} />
-        <HomeIntro />
-      </>
+      <AvatarIcon style={{ width: 270, height: 270 }} />
+      <HomeIntro />
     </HomeLayout>
   );
 };
