@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 import { getScrollTop } from '../../lib/utils';
-import MainHeader from './MainHeader';
+import MainHeader, { FloatingHeaderComponent } from './MainHeader';
 
 interface FloatingHeaderProps {}
 
@@ -18,6 +18,7 @@ const FloatingHeader = (props: FloatingHeaderProps) => {
   const blockRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
   const [marginTop, setMarginTop] = useState(0);
+  const [isMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     if (!blockRef.current) return;
@@ -78,7 +79,7 @@ const FloatingHeader = (props: FloatingHeaderProps) => {
       }
       ref={blockRef}
     >
-      <MainHeader />
+      {isMobile ? <FloatingHeaderComponent /> : <MainHeader />}
     </Block>
   );
 };
