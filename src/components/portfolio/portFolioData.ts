@@ -1,5 +1,5 @@
 export const broukflix = {
-  title: 'BrouFlix',
+  title: 'BroukFlix',
   description: `Nexflix Clone Coding using IMDB
   React, Styled-Components`,
   github: 'https://github.com/cdbrouk/broukflix',

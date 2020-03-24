@@ -16,8 +16,11 @@ const Block = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  ${mediaQuery(944)} {
+  ${mediaQuery(768)} {
     flex-direction: column-reverse;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 2rem;
   }
 `;
 

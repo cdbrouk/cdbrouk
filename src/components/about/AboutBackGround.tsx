@@ -9,12 +9,13 @@ const Background = styled.div`
 `;
 
 const InnerBackground = styled.div`
+  display: flex;
   width: calc(100vw - 5rem);
   height: calc(100vh - 5rem);
   background-color: #3a6ee8;
   ${mediaQuery(768)} {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 812px;
   }
 `;
 

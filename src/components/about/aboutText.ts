@@ -1,6 +1,6 @@
 const aboutText = `
   ## Choi hyeongwuk
-  JR.FullStack Developer  
+  Jr. FullStack Developer  
   korea / 01026093531\n
   ## Stack  
   -<strong>Front</strong> : React, React-Native, Redux, Typescript  

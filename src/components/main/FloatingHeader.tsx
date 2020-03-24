@@ -74,7 +74,7 @@ const FloatingHeader = (props: FloatingHeaderProps) => {
     <Block
       style={
         visible
-          ? { marginTop, display: 'block' }
+          ? { marginTop, display: 'flex' }
           : { marginTop: -1 * height, opacity: 0 }
       }
       ref={blockRef}
