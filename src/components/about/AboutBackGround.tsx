@@ -6,6 +6,9 @@ const Background = styled.div`
   display: flex;
   height: 100vh;
   background-color: #909dc1;
+  ${mediaQuery(768)} {
+    height: 812px;
+  }
 `;
 
 const InnerBackground = styled.div`

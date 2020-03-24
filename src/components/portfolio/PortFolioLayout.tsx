@@ -19,7 +19,7 @@ const Block = styled.div`
   ${mediaQuery(768)} {
     flex-direction: column-reverse;
     justify-content: center;
-    height: 100vh;
+    height: 812px;
     margin-bottom: 2rem;
   }
 `;

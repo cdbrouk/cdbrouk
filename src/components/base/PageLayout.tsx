@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MainResponsive from '../main/MainResponsive';
+import media from '../../lib/styles/media';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,9 @@ const Inner = styled(MainResponsive)`
   height: 100vh;
   justify-content: center;
   align-items: center;
+  ${media.small} {
+    height: 812px;
+  }
 `;
 
 const PageLayout = ({ children, id }: PageLayoutProps) => {
