@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import optimizeImage from '../../lib/optimizeImage';
 import { github32, broukflix } from '../../static/images';
+import { mediaQuery } from '../../lib/styles/media';
 
 interface PortFolioLayoutProps {
   title: string;
@@ -13,9 +14,11 @@ interface PortFolioLayoutProps {
 const Block = styled.div`
   display: flex;
   width: 100%;
-  height: 100vh;
   justify-content: space-between;
   align-items: center;
+  ${mediaQuery(944)} {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Info = styled.div`
@@ -24,12 +27,40 @@ const Info = styled.div`
   justify-content: space-between;
   width: 480px;
   height: 341px;
+  ${mediaQuery(1440)} {
+    width: 350px;
+  }
+  ${mediaQuery(1312)} {
+    width: 325px;
+  }
+  ${mediaQuery(944)} {
+    width: 236px;
+  }
+  ${mediaQuery(767)} {
+    width: 190px;
+  }
 `;
 
-const Image = styled.div`
+const Image = styled.img`
   width: 960px;
   height: 560px;
-  background-color: pink;
+  background-color: gray;
+  ${mediaQuery(1440)} {
+    width: 700px;
+    height: 420px;
+  }
+  ${mediaQuery(1312)} {
+    width: 650px;
+    height: 377px;
+  }
+  ${mediaQuery(944)} {
+    width: 472px;
+    height: 270px;
+  }
+  ${mediaQuery(767)} {
+    width: 380px;
+    height: 220px;
+  }
 `;
 
 const InfoTitle = styled.p`
@@ -85,9 +116,7 @@ const PortFolioLayout = ({
           </LinkItem>
         </InfoLink>
       </Info>
-      <Image>
-        <img src={optimizeImage(broukflix, 32)} alt={title} />
-      </Image>
+      <Image src={optimizeImage(broukflix, 32)} alt={title} />
     </Block>
   );
 };

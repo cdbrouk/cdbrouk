@@ -8,10 +8,7 @@ export interface MainHeaderProps {}
 
 const Block = styled.div`
   height: 108px;
-  /* position: fixed;
-  z-index: 10; */
   width: 100%;
-  background-color: white;
 `;
 
 const Inner = styled(MainResponsive)`
@@ -34,6 +31,8 @@ const RightItem = styled.p`
 `;
 
 const MainHeader = (props: MainHeaderProps) => {
+  console.log(window.innerWidth);
+
   return (
     <Block>
       <Inner>

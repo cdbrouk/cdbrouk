@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mediaQuery } from '../../lib/styles/media';
 
 const Background = styled.div`
   display: flex;
@@ -11,6 +12,10 @@ const InnerBackground = styled.div`
   width: calc(100vw - 5rem);
   height: calc(100vh - 5rem);
   background-color: #3a6ee8;
+  ${mediaQuery(768)} {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Content = styled.div`
