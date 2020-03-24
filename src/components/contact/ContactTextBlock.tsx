@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { github32 } from '../../static/images';
-import optimizeImage from '../../lib/optimizeImage';
 
 const Block = styled.div`
   display: flex;
