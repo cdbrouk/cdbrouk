@@ -11,7 +11,7 @@ interface AboutPageProps {
 
 const Intro = styled.div`
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
 `;
 
