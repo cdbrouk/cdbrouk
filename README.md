@@ -1,10 +1,10 @@
-## CDBROUK's Portfolio
+## WebFullstack Developer
 
-## This site is responsive
+## Stack
+- React, ReactNative, Vue.js, Next.js
+- scss, styled-component
+- Node.js, Python3 Django
+- Mysql, Redis
+- AWS, Docker
 
-# `Stack`
-
-- React
-- React Router
-- TypeScript
-- Styled Component
+이하윙~ 나는 형욱쓰
