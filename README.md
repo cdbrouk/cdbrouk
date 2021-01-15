@@ -9,6 +9,7 @@
 - Node.js, Python3 Django
 - Mysql, Redis
 - AWS, Docker
+- storybook, mocha, chai, jest
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cdbrouk&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
