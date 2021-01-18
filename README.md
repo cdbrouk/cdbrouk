@@ -20,3 +20,4 @@
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=getcha-dev&repo=getcha-react-ui-components)](https://github.com/getcha-dev/getcha-react-ui-components)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=QuadFlask&repo=react-native-naver-map)](https://github.com/QuadFlask/react-native-naver-map)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=cdbrouk&repo=PlayGround)](https://github.com/cdbrouk/PlayGround)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=cdbrouk&repo=brouk-devlog)](https://github.com/cdbrouk/brouk-devlog)
